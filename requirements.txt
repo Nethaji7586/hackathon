@@ -1,0 +1,9 @@
+Flask
+Flask-Session
+firebase-admin
+python-dotenv
+pandas
+scikit-learn
+joblib
+Babel
+Werkzeug
