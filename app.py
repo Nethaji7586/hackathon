@@ -18,6 +18,7 @@ from email.mime.text import MIMEText
 import traceback
 from werkzeug.exceptions import NotFound
 from babel.numbers import format_number as babel_format_number
+from waitress import serve
 
 
 # Load environment variables
@@ -840,5 +841,5 @@ def logout():
     
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    serve(app, host="0.0.0.0", port=port)
 
